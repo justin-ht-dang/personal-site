@@ -4,7 +4,6 @@
     border-bottom: 1px solid grey;
     margin: 0px -5px 50px -5px;
     overflow: hidden;
-
 }
 .nav-link {
 
@@ -37,6 +36,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
 .container {
 
     padding: 2px 16px;
@@ -47,6 +47,7 @@
     list-style: none;
     color: white;
 }
+
 
 .heading-theme {
 
@@ -69,6 +70,21 @@
 .left {
 
     float: left;
+}
+
+.grey {
+
+    color: grey;
+}
+
+.slategrey {
+
+    color: slategrey;
+}
+
+.midnightblue {
+
+    color: midnightblue;
 }
 
 

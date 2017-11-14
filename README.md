@@ -1,2 +1,2 @@
 # personal-site
-Code for my personal site [justind.me]
+Code for my personal site (justind.me)

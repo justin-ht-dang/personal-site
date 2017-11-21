@@ -103,15 +103,21 @@
 
 #nav-name {
 
-    margin-bottom: 2px;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     font-size: 40px;
-    margin-left: 5%;
+    font-family: monospace;
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+
 }
 
 #title-panel {
 
     text-align: center;
-    padding: 200px 20px;
+    padding: 250px 20px;
 }
 
 #title-text {

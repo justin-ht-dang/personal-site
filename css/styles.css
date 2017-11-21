@@ -3,8 +3,20 @@
 
     border-bottom: 1px solid grey;
     margin: 0px -5px 50px -5px;
+    padding-top: 10px;
+    background-color: white;
     overflow: hidden;
 }
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
 .nav-link {
 
     display: inline-block;

@@ -177,7 +177,7 @@ table {
 
 .theme-background-color {
 
-    background-color: rgb(100, 50, 40, 0.7);
+    background-color: rgba(100, 50, 40, 0.7);
 }
 
 .theme-color {
@@ -192,6 +192,7 @@ table {
     display: inline-block;
     margin-bottom: 5px;
     padding-bottom: 5px;
+    width: 300px;
     font-size: 40px;
     font-family: monospace;
     margin-left: 10%;

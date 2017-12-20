@@ -1,0 +1,139 @@
+
+@import 'reset';
+
+
+@primary-color: #81002f;
+@heading-color: #000000;
+@primary-font: 'Roboto', monospace;
+@secondary-font: sans-serif;
+@light-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+@heavy-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+@heading-font-size: 3vw;
+@subheading-font-size: 2.5vw;
+@text-font-size: 1.5vw;
+
+a {
+ 
+    text-decoration: none;
+}
+
+.fixed() {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+}
+
+nav {
+ 
+    .fixed();
+    background-color: @primary-color;
+    box-shadow: @heavy-shadow;
+    padding: 10px 10px 0px 10px;
+    overflow: hidden;
+    font-family: @primary-font; 
+}
+
+.links-list {
+    
+    padding: 12px 0px 0px 0px;
+
+    a {
+
+        padding-right: 20px;
+        color: white;
+    }
+}
+
+section {
+    
+    border-bottom: 2px solid grey;
+    padding: 25px 30px 30px 40px;
+    overflow: hidden;
+
+    h2 {
+
+        font-size: @subheading-font-size;
+        font-family: @primary-font;
+        font-weight: 400;
+        color: @heading-color;
+    }
+}
+
+.card {
+
+    box-shadow: @light-shadow;
+    transition: 0.3s;
+    width: 20%;
+    margin: 5%;
+    margin-left: 7%;
+
+    &:hover {
+
+        box-shadow: @heavy-shadow;
+    }
+
+    div {
+
+        padding: 10px 20px;
+
+        h4 {
+
+            font-size: @text-font-size;
+            font-family: @primary-font;
+            font-weight: bold;
+            color: @primary-color;
+        }
+
+        p {
+
+            font-size: @text-font-size;
+            font-family: @primary-font;
+            color: @heading-color;
+        }
+    }
+}
+
+
+/* Utility classes */
+
+
+.right {
+
+    float: right;
+}
+
+.left {
+
+    float: left;
+}
+
+/* id */
+
+#nav-name {
+    
+    color: white; 
+    font-size: @heading-font-size;
+}
+
+#title-panel {
+
+    text-align: center;
+    padding: 340px 30%;
+    background: url('../img/tri-quad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title-text {
+
+    font-size: @heading-font-size;
+    font-family: @primary-font;
+    color: @heading-color;
+    padding: 7px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+}

@@ -13,12 +13,12 @@
 @text-font-size: 1.5vw;
 
 a {
- 
+
     text-decoration: none;
 }
 
 .fixed() {
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -28,17 +28,17 @@ a {
 }
 
 nav {
- 
+
     .fixed();
     background-color: @primary-color;
     box-shadow: @heavy-shadow;
     padding: 10px 10px 0px 10px;
     overflow: hidden;
-    font-family: @primary-font; 
+    font-family: @primary-font;
 }
 
 .links-list {
-    
+
     padding: 12px 0px 0px 0px;
 
     a {
@@ -49,7 +49,7 @@ nav {
 }
 
 section {
-    
+
     border-bottom: 2px solid grey;
     padding: 25px 30px 30px 40px;
     overflow: hidden;
@@ -63,12 +63,20 @@ section {
     }
 }
 
+.container {
+
+    padding: 5%;
+
+    aside {
+
+        width: 20vw;
+    }
+}
 .card {
 
     box-shadow: @light-shadow;
     transition: 0.3s;
     width: 20%;
-    margin: 5%;
     margin-left: 7%;
 
     &:hover {
@@ -98,6 +106,68 @@ section {
 }
 
 
+.contacts-table {
+
+    td {
+
+        vertical-align: middle;
+    }
+    p {
+        font-size: 1.2vw;
+        font-family: @primary-font;
+    }
+}
+
+.fa {
+
+    color: @primary-color;
+    padding: 5px;
+}
+
+.contact-form {
+
+    width: 57vw;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-box() {
+
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text], input[type=email] {
+    .form-box();
+}
+
+textarea {
+
+    .form-box();
+    height: 170px;
+}
+
+input[type=submit] {
+
+    background-color: @primary-color;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #590020;
+}
+
 /* Utility classes */
 
 
@@ -114,8 +184,8 @@ section {
 /* id */
 
 #nav-name {
-    
-    color: white; 
+
+    color: white;
     font-size: @heading-font-size;
 }
 
@@ -136,4 +206,14 @@ section {
     padding: 7px;
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+#contact-photo {
+
+    border-radius: 10px;
+    width: 20vw;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    border-shadow: @heavy-shadow;
+
 }

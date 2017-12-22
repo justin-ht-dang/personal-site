@@ -15,6 +15,7 @@
 a {
 
     text-decoration: none;
+    cursor: pointer;
 }
 
 .fixed() {
@@ -32,6 +33,7 @@ nav {
     .fixed();
     background-color: @primary-color;
     box-shadow: @heavy-shadow;
+    opacity: 0.9;
     padding: 10px 10px 0px 10px;
     overflow: hidden;
     font-family: @primary-font;
@@ -51,7 +53,7 @@ nav {
 section {
 
     border-bottom: 2px solid grey;
-    padding: 25px 30px 30px 40px;
+    padding: 25px 30px 50px 40px;
     overflow: hidden;
 
     h2 {
@@ -78,10 +80,20 @@ section {
     transition: 0.3s;
     width: 20%;
     margin-left: 7%;
+    border-radius: 10px;
 
     &:hover {
 
         box-shadow: @heavy-shadow;
+    }
+
+    img {
+
+        display: block;
+        width: 60%;
+        padding: 15px 0px;
+        margin: auto;
+        border-radius: 50%;
     }
 
     div {
@@ -113,7 +125,7 @@ section {
         vertical-align: middle;
     }
     p {
-        font-size: 1.2vw;
+        font-size: 1vw;
         font-family: @primary-font;
     }
 }
@@ -130,6 +142,11 @@ section {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
+
+    h2 {
+
+        color: @primary-color;
+    }
 }
 
 .form-box() {
@@ -152,17 +169,17 @@ textarea {
     height: 170px;
 }
 
-input[type=submit] {
+button {
 
     background-color: @primary-color;
     color: white;
-    padding: 12px 20px;
+    padding: 4px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+button:hover {
     background-color: #590020;
 }
 

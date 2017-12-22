@@ -130,6 +130,7 @@ table {
 /* CSS Reset finish */
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 nav {
   position: fixed;
@@ -140,6 +141,7 @@ nav {
   height: 50px;
   background-color: #81002f;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
   padding: 10px 10px 0px 10px;
   overflow: hidden;
   font-family: 'Roboto', monospace;
@@ -153,7 +155,7 @@ nav {
 }
 section {
   border-bottom: 2px solid grey;
-  padding: 25px 30px 30px 40px;
+  padding: 25px 30px 50px 40px;
   overflow: hidden;
 }
 section h2 {
@@ -173,9 +175,17 @@ section h2 {
   transition: 0.3s;
   width: 20%;
   margin-left: 7%;
+  border-radius: 10px;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.card img {
+  display: block;
+  width: 60%;
+  padding: 15px 0px;
+  margin: auto;
+  border-radius: 50%;
 }
 .card div {
   padding: 10px 20px;
@@ -195,7 +205,7 @@ section h2 {
   vertical-align: middle;
 }
 .contacts-table p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-family: 'Roboto', monospace;
 }
 .fa {
@@ -207,6 +217,9 @@ section h2 {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 10px;
+}
+.contact-form h2 {
+  color: #81002f;
 }
 input[type=text],
 input[type=email] {
@@ -226,15 +239,15 @@ textarea {
   resize: vertical;
   height: 170px;
 }
-input[type=submit] {
+button {
   background-color: #81002f;
   color: white;
-  padding: 12px 20px;
+  padding: 4px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-input[type=submit]:hover {
+button:hover {
   background-color: #590020;
 }
 /* Utility classes */

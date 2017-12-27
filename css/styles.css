@@ -131,6 +131,7 @@ table {
 a {
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.3vw;
 }
 nav {
   position: fixed;
@@ -141,7 +142,6 @@ nav {
   height: 50px;
   background-color: #81002f;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
   padding: 10px 10px 0px 10px;
   overflow: hidden;
   font-family: 'Roboto', monospace;
@@ -170,12 +170,21 @@ section h2 {
 .container aside {
   width: 20vw;
 }
+.flipper {
+  width: 20%;
+  height: 60vh;
+  margin-left: 7%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 20%;
+  height: 60vh;
   margin-left: 7%;
   border-radius: 10px;
+  cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
@@ -191,15 +200,21 @@ section h2 {
   padding: 10px 20px;
 }
 .card div h4 {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: 'Roboto', monospace;
   font-weight: bold;
   color: #81002f;
 }
 .card div p {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: 'Roboto', monospace;
   color: #000000;
+}
+.card .front {
+  visibility: visible;
+}
+.card .back {
+  visibility: hidden;
 }
 .contacts-table td {
   vertical-align: middle;
@@ -215,7 +230,7 @@ section h2 {
 .contact-form {
   width: 57vw;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 1vw;
   border-radius: 10px;
 }
 .contact-form h2 {

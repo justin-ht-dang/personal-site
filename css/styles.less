@@ -10,12 +10,13 @@
 @heavy-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 @heading-font-size: 3vw;
 @subheading-font-size: 2.5vw;
-@text-font-size: 1.5vw;
+@text-font-size: 1.3vw;
 
 a {
 
     text-decoration: none;
     cursor: pointer;
+    font-size: @text-font-size;
 }
 
 .fixed() {
@@ -33,7 +34,7 @@ nav {
     .fixed();
     background-color: @primary-color;
     box-shadow: @heavy-shadow;
-    opacity: 0.9;
+    // opacity: 0.9;
     padding: 10px 10px 0px 10px;
     overflow: hidden;
     font-family: @primary-font;
@@ -74,18 +75,32 @@ section {
         width: 20vw;
     }
 }
+
+.flipper {
+
+    width: 20%;
+    height: 60vh;
+    margin-left: 7%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
 .card {
 
     box-shadow: @light-shadow;
     transition: 0.3s;
     width: 20%;
+    height: 60vh;
     margin-left: 7%;
     border-radius: 10px;
+    cursor: pointer;
 
     &:hover {
 
         box-shadow: @heavy-shadow;
+        // transform: rotateY(20deg);
     }
+
 
     img {
 
@@ -115,8 +130,17 @@ section {
             color: @heading-color;
         }
     }
-}
 
+    .front {
+
+        visibility: visible;
+    }
+
+    .back {
+
+        visibility: hidden;
+    }
+}
 
 .contacts-table {
 
@@ -140,7 +164,7 @@ section {
 
     width: 57vw;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 1vw;
     border-radius: 10px;
 
     h2 {

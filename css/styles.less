@@ -4,13 +4,17 @@
 
 @primary-color: #81002f;
 @heading-color: #000000;
-@primary-font: 'Roboto', monospace;
-@secondary-font: sans-serif;
+@primary-font: 'Copse', serif;
+@secondary-font: 'Oswald', sans-serif;;
+@text-font: 'Open Sans', sans-serif;
+@monospace-font: 'Cutive Mono', monospace;
 @light-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 @heavy-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-@heading-font-size: 3vw;
-@subheading-font-size: 2.5vw;
+@heading-font-size: 2.8vw;
+@subheading-font-size: 2.0vw;
 @text-font-size: 1.3vw;
+
+
 
 a {
 
@@ -37,7 +41,7 @@ nav {
     // opacity: 0.9;
     padding: 10px 10px 0px 10px;
     overflow: hidden;
-    font-family: @primary-font;
+    font-family: @secondary-font;
 }
 
 .links-list {
@@ -46,7 +50,7 @@ nav {
 
     a {
 
-        padding-right: 20px;
+        padding-right: 40px;
         color: white;
     }
 }
@@ -59,8 +63,8 @@ section {
 
     h2 {
 
-        font-size: @subheading-font-size;
-        font-family: @primary-font;
+        font-size: @heading-font-size;
+        font-family: @secondary-font;
         font-weight: 400;
         color: @heading-color;
     }
@@ -98,7 +102,6 @@ section {
     &:hover {
 
         box-shadow: @heavy-shadow;
-        // transform: rotateY(20deg);
     }
 
 
@@ -117,16 +120,17 @@ section {
 
         h4 {
 
-            font-size: @text-font-size;
-            font-family: @primary-font;
+            font-size: @subheading-font-size;
+            font-family: @secondary-font;
             font-weight: bold;
             color: @primary-color;
         }
 
         p {
 
+            padding-top: 10px;
             font-size: @text-font-size;
-            font-family: @primary-font;
+            font-family: @text-font;
             color: @heading-color;
         }
     }
@@ -150,7 +154,7 @@ section {
     }
     p {
         font-size: 1vw;
-        font-family: @primary-font;
+        font-family: @text-font;
     }
 }
 
@@ -207,6 +211,30 @@ button:hover {
     background-color: #590020;
 }
 
+.typed-cursor{
+    font-size: @heading-font-size;
+    opacity: 0.9;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 /* Utility classes */
 
 
@@ -226,6 +254,7 @@ button:hover {
 
     color: white;
     font-size: @heading-font-size;
+    font-family: @primary-font;
 }
 
 #title-panel {
@@ -239,9 +268,18 @@ button:hover {
 
 #title-text {
 
+    min-width: 350px;
+    display: inline;
+    text-align: left;
     font-size: @heading-font-size;
-    font-family: @primary-font;
+    font-family: @monospace-font;
     color: @heading-color;
+}
+
+#title-text-box {
+
+    text-align: left;
+    min-height: 50px;
     padding: 7px;
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.7);

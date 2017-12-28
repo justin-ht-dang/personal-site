@@ -144,13 +144,13 @@ nav {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   padding: 10px 10px 0px 10px;
   overflow: hidden;
-  font-family: 'Roboto', monospace;
+  font-family: 'Oswald', sans-serif;
 }
 .links-list {
   padding: 12px 0px 0px 0px;
 }
 .links-list a {
-  padding-right: 20px;
+  padding-right: 40px;
   color: white;
 }
 section {
@@ -159,8 +159,8 @@ section {
   overflow: hidden;
 }
 section h2 {
-  font-size: 2.5vw;
-  font-family: 'Roboto', monospace;
+  font-size: 2.8vw;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   color: #000000;
 }
@@ -200,14 +200,15 @@ section h2 {
   padding: 10px 20px;
 }
 .card div h4 {
-  font-size: 1.3vw;
-  font-family: 'Roboto', monospace;
+  font-size: 2vw;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   color: #81002f;
 }
 .card div p {
+  padding-top: 10px;
   font-size: 1.3vw;
-  font-family: 'Roboto', monospace;
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
 }
 .card .front {
@@ -221,7 +222,7 @@ section h2 {
 }
 .contacts-table p {
   font-size: 1vw;
-  font-family: 'Roboto', monospace;
+  font-family: 'Open Sans', sans-serif;
 }
 .fa {
   color: #81002f;
@@ -265,6 +266,46 @@ button {
 button:hover {
   background-color: #590020;
 }
+.typed-cursor {
+  font-size: 2.8vw;
+  opacity: 0.9;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Utility classes */
 .right {
   float: right;
@@ -275,7 +316,8 @@ button:hover {
 /* id */
 #nav-name {
   color: white;
-  font-size: 3vw;
+  font-size: 2.8vw;
+  font-family: 'Copse', serif;
 }
 #title-panel {
   text-align: center;
@@ -285,9 +327,16 @@ button:hover {
   background-size: cover;
 }
 #title-text {
-  font-size: 3vw;
-  font-family: 'Roboto', monospace;
+  min-width: 350px;
+  display: inline;
+  text-align: left;
+  font-size: 2.8vw;
+  font-family: 'Cutive Mono', monospace;
   color: #000000;
+}
+#title-text-box {
+  text-align: left;
+  min-height: 50px;
   padding: 7px;
   border: 1px solid black;
   background-color: rgba(255, 255, 255, 0.7);

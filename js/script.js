@@ -1,24 +1,37 @@
 
-$(document).ready(function(event) {
+jQuery(document).ready(function(event) {
 
-    $(".scroll-link").on('click', function() {
+    jQuery(".scroll-link").on('click', function() {
 
-        var linkTo = $(this).attr('name');
+        var linkTo = jQuery(this).attr('name');
 
-        $('html, body').animate( {
-            scrollTop: $(linkTo).offset().top
+        jQuery('html, body').animate( {
+            scrollTop: jQuery(linkTo).offset().top
         }, 300);
     });
 
-    $('.flipper').flip({
+    jQuery('.flipper').flip({
         trigger: 'click'
     });
 
-    $('.flipper').on('mouseover', function () {
-        $(this).css('transform', 'rotateY(30deg)')
+    jQuery('.flipper').on('mouseover', function () {
+        jQuery(this).css('transform', 'rotateY(30deg)')
     });
 
-    $('.flipper').on('mouseleave', function () {
-        $(this).css('transform', 'rotateY(0deg)')
+    jQuery('.flipper').on('mouseleave', function () {
+        jQuery(this).css('transform', 'rotateY(0deg)')
     });
+
+    var options = {
+        strings: ["", "Hi there! =)", "I am a programmer", "I am a web developer", "I like cybersecurity", "I like physics", "I like building things"],
+        typeSpeed: 70,
+  		startDelay: 500,
+  		backSpeed: 30,
+  		backDelay: 800,
+        showCursor: true,
+        loop: true,
+        contentType: 'html'
+    }
+    var typed = new Typed('#title-text', options);
+
 });

@@ -23,7 +23,7 @@ jQuery(document).ready(function(event) {
     });
 
     var options = {
-        strings: ["", "Hi there! =)", "I am a programmer", "I am a web developer", "I like cybersecurity", "I like physics", "I like building things"],
+        strings: ["", "I am a programmer", "I am a web developer", "I'm interested in cybersecurity", "I'm interested in physics", "I like building things"],
         typeSpeed: 70,
   		startDelay: 500,
   		backSpeed: 30,

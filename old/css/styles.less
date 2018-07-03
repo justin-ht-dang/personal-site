@@ -1,0 +1,296 @@
+
+@import 'reset';
+
+
+@primary-color: #81002f;
+@heading-color: #000000;
+@primary-font: 'Copse', serif;
+@secondary-font: 'Oswald', sans-serif;;
+@text-font: 'Open Sans', sans-serif;
+@monospace-font: 'Cutive Mono', monospace;
+@light-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+@heavy-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+@heading-font-size: 2.8vw;
+@subheading-font-size: 2.0vw;
+@text-font-size: 1.3vw;
+
+
+
+a {
+
+    text-decoration: none;
+    cursor: pointer;
+    font-size: @text-font-size;
+}
+
+.fixed() {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+}
+
+nav {
+
+    .fixed();
+    background-color: @primary-color;
+    box-shadow: @heavy-shadow;
+    // opacity: 0.9;
+    padding: 10px 10px 0px 10px;
+    overflow: hidden;
+    font-family: @secondary-font;
+}
+
+.links-list {
+
+    padding: 12px 0px 0px 0px;
+
+    a {
+
+        padding-right: 40px;
+        color: white;
+    }
+}
+
+section {
+
+    border-bottom: 2px solid grey;
+    padding: 25px 30px 50px 40px;
+    overflow: hidden;
+
+    h2 {
+
+        font-size: @heading-font-size;
+        font-family: @secondary-font;
+        font-weight: 400;
+        color: @heading-color;
+    }
+}
+
+.container {
+
+    padding: 5%;
+
+    aside {
+
+        width: 20vw;
+    }
+}
+
+.flipper {
+
+    width: 20%;
+    height: 60vh;
+    margin-left: 7%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card {
+
+    box-shadow: @light-shadow;
+    transition: 0.3s;
+    width: 20%;
+    height: 60vh;
+    margin-left: 7%;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: @heavy-shadow;
+    }
+
+
+    img {
+
+        display: block;
+        width: 60%;
+        padding: 15px 0px;
+        margin: auto;
+        border-radius: 50%;
+    }
+
+    div {
+
+        padding: 10px 20px;
+
+        h4 {
+
+            font-size: @subheading-font-size;
+            font-family: @secondary-font;
+            font-weight: bold;
+            color: @primary-color;
+        }
+
+        p {
+
+            padding-top: 10px;
+            font-size: @text-font-size;
+            font-family: @text-font;
+            color: @heading-color;
+        }
+    }
+
+    .front {
+
+        visibility: visible;
+    }
+
+    .back {
+
+        visibility: hidden;
+    }
+}
+
+.contacts-table {
+
+    td {
+
+        vertical-align: middle;
+    }
+    p {
+        font-size: 1vw;
+        font-family: @text-font;
+    }
+}
+
+.fa {
+
+    color: @primary-color;
+    padding: 5px;
+}
+
+.contact-form {
+
+    width: 57vw;
+    background-color: #f2f2f2;
+    padding: 1vw;
+    border-radius: 10px;
+
+    h2 {
+
+        color: @primary-color;
+    }
+}
+
+.form-box() {
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 6px 0px 16px 0px;
+    resize: vertical;
+}
+
+input[type=text], input[type=email] {
+    .form-box();
+}
+
+textarea {
+
+    .form-box();
+    height: 170px;
+}
+
+button {
+
+    background-color: @primary-color;
+    color: white;
+    padding: 4px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #590020;
+}
+
+.typed-cursor{
+    font-size: @heading-font-size;
+    opacity: 0.9;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Utility classes */
+
+
+.right {
+
+    float: right;
+}
+
+.left {
+
+    float: left;
+}
+
+/* id */
+
+#nav-name {
+
+    color: white;
+    font-size: @heading-font-size;
+    font-family: @primary-font;
+}
+
+#title-panel {
+
+    text-align: center;
+    padding: 340px 30%;
+    background: url('../img/tri-quad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title-text {
+
+    min-width: 350px;
+    display: inline;
+    text-align: left;
+    font-size: @heading-font-size;
+    font-family: @monospace-font;
+    color: @heading-color;
+}
+
+#title-text-box {
+
+    text-align: left;
+    min-height: 50px;
+    padding: 7px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#contact-photo {
+
+    border-radius: 10px;
+    width: 20vw;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    border-shadow: @heavy-shadow;
+
+}

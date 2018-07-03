@@ -9,21 +9,32 @@ jQuery(document).ready(function(event) {
             scrollTop: jQuery(linkTo).offset().top
         }, 300);
     });
-
-    jQuery('.flipper').flip({
-        trigger: 'click'
+    
+    $(".flipper").flip({
+        trigger: 'manual'
     });
 
-    jQuery('.flipper').on('mouseover', function () {
-        jQuery(this).css('transform', 'rotateY(30deg)')
+    jQuery(".btn").click(function(){
+        jQuery('.flipper').flip('toggle');
     });
 
-    jQuery('.flipper').on('mouseleave', function () {
-        jQuery(this).css('transform', 'rotateY(0deg)')
-    });
+    // function(){
+    //     $(".card").flip();
+    // };
+    // jQuery('.flipper').flip({
+    //     trigger: 'click'
+    // });
+
+    // jQuery('.flipper').on('mouseover', function () {
+    //     jQuery(this).css('transform', 'rotateY(30deg)')
+    // });
+
+    // jQuery('.flipper').on('mouseleave', function () {
+    //     jQuery(this).css('transform', 'rotateY(0deg)')
+    // });
 
     var options = {
-        strings: ["", "I am a programmer", "I am a web developer", "I'm interested in cybersecurity", "I'm interested in physics", "I like building things"],
+        strings: ["cybersecurity.", "python.", "web development."],
         typeSpeed: 70,
   		startDelay: 500,
   		backSpeed: 30,

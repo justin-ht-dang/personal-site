@@ -1,38 +1,26 @@
 
 jQuery(document).ready(function(event) {
 
-    jQuery(".scroll-link").on('click', function() {
-
-        var linkTo = jQuery(this).attr('name');
-
-        jQuery('html, body').animate( {
-            scrollTop: jQuery(linkTo).offset().top
-        }, 300);
-    });
-    
     $(".flipper").flip({
         trigger: 'manual'
     });
 
-    jQuery(".btn").click(function(){
-        jQuery('.flipper').flip('toggle');
+    
+    $(".btn").click(function(){
+        $('.flipper').flip('toggle');
     });
 
-    // function(){
-    //     $(".card").flip();
-    // };
-    // jQuery('.flipper').flip({
-    //     trigger: 'click'
-    // });
-
-    // jQuery('.flipper').on('mouseover', function () {
-    //     jQuery(this).css('transform', 'rotateY(30deg)')
-    // });
-
-    // jQuery('.flipper').on('mouseleave', function () {
-    //     jQuery(this).css('transform', 'rotateY(0deg)')
-    // });
-
+    $('#contact-button').click(function(){
+        if ($('#contact-list').is(':visible')) {
+            $('#contact-list').hide();
+            $('#detailed-contact').show();
+        }
+        else {
+            $('#detailed-contact').hide();
+            $('#contact-list').show();
+        }
+    });
+        
     var options = {
         strings: ["cybersecurity.", "python.", "web development."],
         typeSpeed: 70,

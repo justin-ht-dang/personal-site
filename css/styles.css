@@ -128,143 +128,123 @@ table {
   border-spacing: 0;
 }
 /* CSS Reset finish */
+svg {
+  height: 30px;
+}
+rect {
+  fill: #81002f;
+  stroke-width: 3;
+  stroke: #81002f;
+}
+nav {
+  padding: 100px 10px 0px 00px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3vw;
+}
 a {
   text-decoration: none;
   cursor: pointer;
   font-size: 1.3vw;
+  color: #81002f;
+  padding: 0px 10px 0px 0px;
 }
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #81002f;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  padding: 10px 10px 0px 10px;
-  overflow: hidden;
-  font-family: 'Oswald', sans-serif;
-}
-.links-list {
-  padding: 12px 0px 0px 0px;
-}
-.links-list a {
-  padding-right: 40px;
-  color: white;
-}
-section {
-  border-bottom: 2px solid grey;
-  padding: 25px 30px 50px 40px;
-  overflow: hidden;
-}
-section h2 {
-  font-size: 2.8vw;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  color: #000000;
-}
-.container {
-  padding: 5%;
-}
-.container aside {
-  width: 20vw;
-}
-.flipper {
-  width: 20%;
-  height: 60vh;
-  margin-left: 7%;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.card {
+.title-panel {
+  width: 900px !important;
+  height: 360px !important;
+  text-align: left;
+  padding: 90px 0px 100px 100px;
+  border: #81002f 2px solid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 20%;
-  height: 60vh;
-  margin-left: 7%;
-  border-radius: 10px;
-  cursor: pointer;
 }
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+.title-panel:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
 }
-.card img {
+.flipper {
+  width: 1000px;
+  height: 550px;
+  margin: 75px 15%;
+  transition: 0.3s;
+}
+.back {
+  transform: rotateY(-180deg);
   display: block;
-  width: 60%;
-  padding: 15px 0px;
-  margin: auto;
-  border-radius: 50%;
 }
-.card div {
-  padding: 10px 20px;
-}
-.card div h4 {
-  font-size: 2vw;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
+.btn {
+  border: 2px solid #81002f;
+  border-radius: 10%;
   color: #81002f;
+  padding: 1px 3px;
+  /* Some padding */
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+  /* Mouse pointer on hover */
 }
-.card div p {
-  padding-top: 10px;
-  font-size: 1.3vw;
-  font-family: 'Open Sans', sans-serif;
-  color: #000000;
+.btn:hover {
+  background-color: #81002f;
+  color: white;
+  transition: 0.3s ease;
 }
-.card .front {
-  visibility: visible;
+.heading-text {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 60px;
+  color: black;
 }
-.card .back {
-  visibility: hidden;
+.body-text {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 24px;
+  padding: 15px 100px 0px 5px;
+}
+.contacts-table {
+  margin: 17px 0px 0px 2px;
 }
 .contacts-table td {
   vertical-align: middle;
 }
 .contacts-table p {
-  font-size: 1vw;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-family: 'Cutive Mono', monospace;
 }
-.fa {
+#name-style {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: 0% 0% 1% 0%;
+  color: #000000;
+}
+#interested-text {
+  width: 440px;
+  padding: 3px 0px 0px 0px;
+  font-size: 2.8vw;
+  font-family: 'Cutive Mono', monospace;
+  color: #000000;
+  float: left;
+}
+#title-text {
+  display: inline;
+  text-align: left;
+  font-size: 2.8vw;
+  font-family: 'Cutive Mono', monospace;
   color: #81002f;
-  padding: 5px;
+  font-weight: bold;
 }
-.contact-form {
-  width: 57vw;
-  background-color: #f2f2f2;
-  padding: 1vw;
-  border-radius: 10px;
+#home-button {
+  text-align: center;
+  margin: 50px 100px 0px 0px;
 }
-.contact-form h2 {
-  color: #81002f;
+#contact-list {
+  padding: 25px 0px 0px 0px;
+  display: block;
 }
-input[type=text],
-input[type=email] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin: 6px 0px 16px 0px;
-  resize: vertical;
+#detailed-contact {
+  display: none;
 }
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin: 6px 0px 16px 0px;
-  resize: vertical;
-  height: 170px;
-}
-button {
-  background-color: #81002f;
-  color: white;
-  padding: 4px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #590020;
+#header-photo {
+  width: 150px;
+  border-radius: 20%;
+  border: 1px solid #81002f;
+  margin-right: 20px;
+  float: left;
 }
 .typed-cursor {
   font-size: 2.8vw;
@@ -305,46 +285,4 @@ button:hover {
   100% {
     opacity: 1;
   }
-}
-/* Utility classes */
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
-/* id */
-#nav-name {
-  color: white;
-  font-size: 2.8vw;
-  font-family: 'Copse', serif;
-}
-#title-panel {
-  text-align: center;
-  padding: 340px 30%;
-  background: url('../img/tri-quad.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#title-text {
-  min-width: 350px;
-  display: inline;
-  text-align: left;
-  font-size: 2.8vw;
-  font-family: 'Cutive Mono', monospace;
-  color: #000000;
-}
-#title-text-box {
-  text-align: left;
-  min-height: 50px;
-  padding: 7px;
-  border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-#contact-photo {
-  border-radius: 10px;
-  width: 20vw;
-  margin-bottom: 30px;
-  border: 1px solid grey;
-  border-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }

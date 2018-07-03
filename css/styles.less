@@ -9,209 +9,179 @@
 @text-font: 'Open Sans', sans-serif;
 @monospace-font: 'Cutive Mono', monospace;
 @light-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-@heavy-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+@heavy-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
 @heading-font-size: 2.8vw;
 @subheading-font-size: 2.0vw;
 @text-font-size: 1.3vw;
 
 
+svg {
+    height: 30px;
+}
+
+rect {
+
+    fill: @primary-color;
+    stroke-width: 3;
+    stroke: @primary-color;
+}
+
+nav {
+
+    padding: 100px 10px 0px 00px;
+    font-family: @secondary-font;
+    font-size: @text-font-size;
+}
 
 a {
 
     text-decoration: none;
     cursor: pointer;
     font-size: @text-font-size;
+    color: @primary-color;
+    padding: 0px 10px 0px 0px;
 }
 
-.fixed() {
+.title-panel {
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 50px;
-}
-
-nav {
-
-    .fixed();
-    background-color: @primary-color;
-    box-shadow: @heavy-shadow;
-    // opacity: 0.9;
-    padding: 10px 10px 0px 10px;
-    overflow: hidden;
-    font-family: @secondary-font;
-}
-
-.links-list {
-
-    padding: 12px 0px 0px 0px;
-
-    a {
-
-        padding-right: 40px;
-        color: white;
-    }
-}
-
-section {
-
-    border-bottom: 2px solid grey;
-    padding: 25px 30px 50px 40px;
-    overflow: hidden;
-
-    h2 {
-
-        font-size: @heading-font-size;
-        font-family: @secondary-font;
-        font-weight: 400;
-        color: @heading-color;
-    }
-}
-
-.container {
-
-    padding: 5%;
-
-    aside {
-
-        width: 20vw;
-    }
-}
-
-.flipper {
-
-    width: 20%;
-    height: 60vh;
-    margin-left: 7%;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.card {
-
+    width: 900px !important; 
+    height: 360px !important;
+    text-align: left;
+    // margin: 100px 15%;
+    // margin-bottom: 15%;
+    padding: 90px 0px 100px 100px;
+    border: @primary-color 2px solid;
     box-shadow: @light-shadow;
     transition: 0.3s;
-    width: 20%;
-    height: 60vh;
-    margin-left: 7%;
-    border-radius: 10px;
-    cursor: pointer;
+    // cursor: pointer;
 
     &:hover {
 
         box-shadow: @heavy-shadow;
     }
+}
 
+.flipper {
 
-    img {
+    width: 1000px;
+    height: 550px;
+    margin: 75px 15%;
+    transition: 0.3s;
+}
 
-        display: block;
-        width: 60%;
-        padding: 15px 0px;
-        margin: auto;
-        border-radius: 50%;
+.back {
+    transform: rotateY(-180deg); 
+    display: block;
+}
+
+.btn {
+
+    border: 2px solid @primary-color;
+    border-radius: 10%;
+    color: @primary-color; 
+    padding: 1px 3px; /* Some padding */
+    margin: 0px 10px 0px 0px;
+    cursor: pointer; /* Mouse pointer on hover */
+
+    &:hover {
+        background-color: @primary-color;
+        color: white;
+        transition: 0.3s ease;
     }
+}
 
-    div {
+.heading-text {
 
-        padding: 10px 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 60px;
+    color: black;
+}
 
-        h4 {
+.body-text {
 
-            font-size: @subheading-font-size;
-            font-family: @secondary-font;
-            font-weight: bold;
-            color: @primary-color;
-        }
-
-        p {
-
-            padding-top: 10px;
-            font-size: @text-font-size;
-            font-family: @text-font;
-            color: @heading-color;
-        }
-    }
-
-    .front {
-
-        visibility: visible;
-    }
-
-    .back {
-
-        visibility: hidden;
-    }
+    font-family: @monospace-font;
+    font-size: 24px;
+    padding: 15px 100px 0px 5px;
 }
 
 .contacts-table {
 
+    margin: 17px 0px 0px 2px;
     td {
 
         vertical-align: middle;
     }
     p {
-        font-size: 1vw;
-        font-family: @text-font;
+        font-size: 14px;
+        font-family: @monospace-font;
     }
 }
 
-.fa {
+#name-style {
 
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+
+    margin: 0% 0% 1% 0%;
+    color: @heading-color;
+}
+
+#interested-text{
+    
+    width: 440px;
+    padding: 3px 0px 0px 0px;
+    font-size: @heading-font-size;
+    font-family: @monospace-font;
+    color: @heading-color;
+    float: left;
+}
+
+#title-text {
+
+    // min-width: 350px;
+    display: inline;
+    text-align: left;
+    font-size: @heading-font-size;
+    font-family: @monospace-font;
     color: @primary-color;
-    padding: 5px;
+    font-weight: bold;
 }
 
-.contact-form {
+#title-text-box {
 
-    width: 57vw;
-    background-color: #f2f2f2;
-    padding: 1vw;
-    border-radius: 10px;
-
-    h2 {
-
-        color: @primary-color;
-    }
+    // text-align: left;
+    // min-height: 50px;
+    // padding: 7px;
+    // border: 1px solid black;
+    // background-color: rgba(255, 255, 255, 0.7);
 }
 
-.form-box() {
-
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin: 6px 0px 16px 0px;
-    resize: vertical;
+#home-button {
+    text-align: center;
+    margin: 50px 100px 0px 0px;
 }
 
-input[type=text], input[type=email] {
-    .form-box();
+#contact-list {
+
+    padding: 25px 0px 0px 0px;
+    display: block;
 }
 
-textarea {
-
-    .form-box();
-    height: 170px;
+#detailed-contact {
+    display: none;
 }
 
-button {
-
-    background-color: @primary-color;
-    color: white;
-    padding: 4px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #590020;
+#header-photo {
+    width: 150px;
+    border-radius: 20%;
+    border: 1px solid @primary-color;
+    margin-right: 20px;
+    float: left;
 }
 
 .typed-cursor{
+
     font-size: @heading-font-size;
     opacity: 0.9;
     -webkit-animation: blink 0.7s infinite;
@@ -233,64 +203,4 @@ button:hover {
     10% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-}
-
-/* Utility classes */
-
-
-.right {
-
-    float: right;
-}
-
-.left {
-
-    float: left;
-}
-
-/* id */
-
-#nav-name {
-
-    color: white;
-    font-size: @heading-font-size;
-    font-family: @primary-font;
-}
-
-#title-panel {
-
-    text-align: center;
-    padding: 340px 30%;
-    background: url('../img/tri-quad.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#title-text {
-
-    min-width: 350px;
-    display: inline;
-    text-align: left;
-    font-size: @heading-font-size;
-    font-family: @monospace-font;
-    color: @heading-color;
-}
-
-#title-text-box {
-
-    text-align: left;
-    min-height: 50px;
-    padding: 7px;
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-#contact-photo {
-
-    border-radius: 10px;
-    width: 20vw;
-    margin-bottom: 30px;
-    border: 1px solid grey;
-    border-shadow: @heavy-shadow;
-
 }

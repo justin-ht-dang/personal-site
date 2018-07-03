@@ -148,6 +148,10 @@ a {
   color: #81002f;
   padding: 0px 10px 0px 0px;
 }
+code {
+  font-size: 9px;
+  color: #81002f;
+}
 .title-panel {
   width: 900px !important;
   height: 360px !important;
@@ -245,6 +249,11 @@ a {
   border: 1px solid #81002f;
   margin-right: 20px;
   float: left;
+}
+#curl-easter-egg {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
 }
 .typed-cursor {
   font-size: 2.8vw;

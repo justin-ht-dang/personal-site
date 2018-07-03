@@ -210,6 +210,9 @@ code {
   font-size: 14px;
   font-family: 'Cutive Mono', monospace;
 }
+.emphasis {
+  color: #81002f;
+}
 #name-style {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: bolder;

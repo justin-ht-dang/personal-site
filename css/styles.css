@@ -195,9 +195,10 @@ code {
   color: black;
 }
 .body-text {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 24px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-size: 18px;
   padding: 15px 100px 0px 5px;
+  line-height: 1.1;
 }
 .contacts-table {
   margin: 17px 0px 0px 2px;

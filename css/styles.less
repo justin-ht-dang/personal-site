@@ -1,9 +1,8 @@
-
 @import 'reset';
-
 
 @primary-color: #81002f;
 @heading-color: #000000;
+@heading-font: 'Alegreya Sans SC', sans-serif;
 @secondary-font: 'Oswald', sans-serif;;
 @text-font: 'Montserrat', 'Open Sans', sans-serif;
 @monospace-font: 'Cutive Mono', monospace;
@@ -15,6 +14,7 @@
 
 
 svg {
+
     height: 30px;
 }
 
@@ -42,6 +42,7 @@ a {
 }
 
 code {
+
 	font-size: 9px;
 	color: @primary-color
 }
@@ -51,13 +52,10 @@ code {
     width: 900px !important; 
     height: 360px !important;
     text-align: left;
-    // margin: 100px 15%;
-    // margin-bottom: 15%;
     padding: 90px 0px 100px 100px;
     border: @primary-color 2px solid;
     box-shadow: @light-shadow;
     transition: 0.3s;
-    // cursor: pointer;
 
     &:hover {
 
@@ -74,6 +72,7 @@ code {
 }
 
 .back {
+
     transform: rotateY(-180deg); 
     display: block;
 }
@@ -83,11 +82,12 @@ code {
     border: 2px solid @primary-color;
     border-radius: 10%;
     color: @primary-color; 
-    padding: 1px 3px; /* Some padding */
+    padding: 1px 3px; 
     margin: 0px 10px 0px 0px;
-    cursor: pointer; /* Mouse pointer on hover */
+    cursor: pointer; 
 
     &:hover {
+
         background-color: @primary-color;
         color: white;
         transition: 0.3s ease;
@@ -96,7 +96,7 @@ code {
 
 .heading-text {
 
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: @heading-font;
     font-size: 60px;
     color: black;
 }
@@ -112,17 +112,20 @@ code {
 .contacts-table {
 
     margin: 17px 0px 0px 2px;
+
     td {
 
         vertical-align: middle;
     }
     p {
+
         font-size: 14px;
         font-family: @monospace-font;
     }
 }
 
 .emphasis {
+
     color: @primary-color;
 }
 #name-style {
@@ -157,6 +160,7 @@ code {
 }
 
 #home-button {
+
     text-align: center;
     margin: 50px 100px 0px 0px;
 }
@@ -168,10 +172,12 @@ code {
 }
 
 #detailed-contact {
+
     display: none;
 }
 
 #header-photo {
+
     width: 150px;
     border-radius: 20%;
     border: 1px solid @primary-color;
@@ -180,6 +186,7 @@ code {
 }
 
 #curl-easter-egg {
+
     position: absolute;
     right: 2px;
     bottom: 2px;
@@ -195,16 +202,19 @@ code {
 }
 
 @keyframes blink{
+
     10% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
 @-webkit-keyframes blink{
+
     10% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
 @-moz-keyframes blink{
+
     10% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }

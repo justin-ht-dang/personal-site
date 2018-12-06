@@ -139,12 +139,12 @@ rect {
 nav {
   padding: 100px 10px 0px 00px;
   font-family: 'Oswald', sans-serif;
-  font-size: 1.3vw;
+  font-size: 19px;
 }
 a {
   text-decoration: none;
   cursor: pointer;
-  font-size: 1.3vw;
+  font-size: 19px;
   color: #81002f;
   padding: 0px 10px 0px 0px;
 }
@@ -179,10 +179,8 @@ code {
   border-radius: 10%;
   color: #81002f;
   padding: 1px 3px;
-  /* Some padding */
   margin: 0px 10px 0px 0px;
   cursor: pointer;
-  /* Mouse pointer on hover */
 }
 .btn:hover {
   background-color: #81002f;
@@ -223,7 +221,7 @@ code {
 #interested-text {
   width: 440px;
   padding: 3px 0px 0px 0px;
-  font-size: 2.8vw;
+  font-size: 40px;
   font-family: 'Cutive Mono', monospace;
   color: #000000;
   float: left;
@@ -231,7 +229,7 @@ code {
 #title-text {
   display: inline;
   text-align: left;
-  font-size: 2.8vw;
+  font-size: 40px;
   font-family: 'Cutive Mono', monospace;
   color: #81002f;
   font-weight: bold;
@@ -260,7 +258,7 @@ code {
   bottom: 2px;
 }
 .typed-cursor {
-  font-size: 2.8vw;
+  font-size: 40px;
   opacity: 0.9;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;

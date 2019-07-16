@@ -253,8 +253,6 @@ code {
   float: left;
 }
 #curl-easter-egg {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 8px;
   position: absolute;
   right: 2px;
   bottom: 2px;

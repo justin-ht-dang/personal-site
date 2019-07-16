@@ -258,6 +258,7 @@ code {
   bottom: 2px;
 }
 .typed-cursor {
+  backface-visibility: hidden;
   font-size: 40px;
   opacity: 0.9;
   -webkit-animation: blink 0.7s infinite;

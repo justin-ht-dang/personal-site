@@ -190,7 +190,7 @@ code {
 .heading-text {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 60px;
-  color: black;
+  color: #81002f;
 }
 .body-text {
   font-family: 'Montserrat', 'Open Sans', sans-serif;
@@ -253,6 +253,8 @@ code {
   float: left;
 }
 #curl-easter-egg {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 8px;
   position: absolute;
   right: 2px;
   bottom: 2px;
